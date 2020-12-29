@@ -1,0 +1,31 @@
+错误：1366 - Incorrect string value: ‘\xE5\xBC\xA0\xE4\xB8\x89’ for column ‘name’ at row 1:
+
+解决方案：
+
+set character_set_client = utf8;
+
+set character_set_server = utf8;
+
+set character_set_connection = utf8;
+
+set character_set_results = utf8;
+
+set collation_connection = utf8_general_ci;
+
+set collation_database = utf8_general_ci;
+
+set collation_server = utf8_general_ci;
+
+
+Mysql 
+
+环境变量  export PATH=$PATH:/usr/local/mysql/bin/
+登录  mysql -uroot -p
+
+Username root
+Password  hzmdlz1106    root123456
+端口号  3306
+
+
+Navicat15破解
+https://www.cnblogs.com/jjakura/articles/13330407.html
