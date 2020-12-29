@@ -1,0 +1,37 @@
+
+
+修改redis下src文件夹的属性
+chmod +x mkreleasehdr.sh
+
+
+
+二、安装中问题总结：
+　　1、mac安装redis过程中编译测试时出现make: *** No rule to make target 'test'. Stop.
+
+　　　　这是因为在解压tar.gz之后，应该先进入redis-5.0.3.tar这个目录里面，然后在编译测试。
+
+　　2、mac redis 编译测试过程结果可能会出现
+
+　　　　Killing still running Redis server xxxx
+
+　　　　make[1]: *** [test] Error 1
+　　　　make: *** [test] Error 2
+
+　　　　查看日志里面可能会出现这样一个异常：[exception]: Executing test client: couldn't execute "src/redis-　　　　            benchmark": no such file or directory. couldn't execute "src/redis-benchmark": no such file or directory。
+
+　　　　解决办法需执行以下命令：
+
+　　　　　　sudo make distclean
+
+　　　　　　sudo make
+
+　　　　　　sudo make test
+
+
+启动redis
+cd /usr/local
+ls
+cd redis-5.0.8
+ls
+启动redis
+./redis-server
