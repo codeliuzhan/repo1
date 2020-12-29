@@ -1,0 +1,35 @@
+Maven项目设置Mybatis国内镜像源下载（alibaba）
+Maven-->conf-->setting-->
+
+<mirror>
+		        <id>alimaven</id>
+		        <name>aliyun maven</name>
+		        <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+		        <mirrorOf>central</mirrorOf>        
+		      </mirror>
+			  
+			  <mirror>
+			    <id>aliyun</id>
+			    <mirrorOf>*</mirrorOf>
+			    <name>aliyun Maven</name>
+			    <url>http://maven.aliyun.com/nexus/content/qroups/public/</url>
+			  </mirror>
+			  <mirror>
+			    <id>alimaven</id>
+			    <mirrorOf>central</mirrorOf>
+			    <name>aliyun maven</name>
+			    <url>http://maven.aliyun.com/nexus/content/repositories/central/</url>
+			  </mirror>
+			  <mirror>
+			    <id>central</id>
+			    <mirrorOf>central</mirrorOf>
+			    <name>Maven Repository Switchboard</name>
+			    <url>http://repo1.maven.org/maven2/</url>
+			  </mirror>
+			  <mirror>
+			    <id>repo2</id>
+			    <mirrorOf>central</mirrorOf>
+			    <name>Human readable Name for this Mirror</name>
+			    <url>http://repo2.maven.org/maven2/</url>
+			  </mirror>
+	 
